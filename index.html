@@ -89,6 +89,7 @@
     .service-card { position: relative; min-height: 325px; overflow: hidden; background: #252525; }
     .service-card img { width: 100%; height: 100%; min-height: 325px; object-fit: cover; opacity: .65; transition: transform .45s, opacity .3s; }
     .service-card:hover img { transform: scale(1.04); opacity: .82; }
+    .service-card img.speaker-image { object-fit: contain; background: #fff; }
     .service-card::after { position: absolute; inset: 20% 0 0; background: linear-gradient(0deg, #101010f5, transparent); content: ""; pointer-events: none; }
     .service-card-copy { position: absolute; z-index: 1; right: 20px; bottom: 19px; left: 20px; }
     .service-card h3 { margin-bottom: 8px; font-size: 27px; }
@@ -156,12 +157,12 @@
 
     .audio { background: #181818; }
     .audio-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 62px; align-items: center; }
-    .audio-image img { width: 100%; height: 420px; object-fit: cover; }
+    .audio-image img { width: 100%; height: 420px; object-fit: contain; background: #fff; }
     .audio-copy h2 { margin-bottom: 17px; }
     .audio-copy > p { color: var(--muted); }
     .brand-lines { display: flex; gap: 10px; margin: 25px 0; }
     .brand-lines span { min-width: 74px; padding: 10px 14px; border: 1px solid var(--line); color: var(--paper); font: 700 21px var(--font-display); }
-    .audio-brands { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 25px 0; }
+    .audio-brands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 25px 0; }
     .audio-brands div { padding: 16px; background: #202020; }
     .audio-brands strong { display: block; margin-bottom: 5px; color: var(--yellow); font: 700 23px var(--font-display); text-transform: uppercase; }
     .audio-brands p { margin: 0; color: var(--muted); font-size: 11px; }
@@ -372,11 +373,11 @@
             <div class="service-card-copy"><h3>Multimídia</h3><p>Modernize seu carro com conectividade e entretenimento.</p><div class="tags"><span class="tag">MP5</span><span class="tag">Apple CarPlay</span><span class="tag">Android</span></div><button class="text-link service-select-trigger" type="button" data-service-choice="Sistema Multimídia">Selecionar serviço <span class="arrow">↗</span></button></div>
           </article>
           <article class="service-card">
-            <img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Aparelho de som e central multimídia instalados no painel de um veículo" loading="lazy">
+            <img class="speaker-image" src="som%201din%20elitesom.webp" alt="Caixa e alto-falantes para som automotivo" loading="lazy">
             <div class="service-card-copy"><h3>Som automotivo</h3><p>Projetos e equipamentos para uma experiência sonora de qualidade.</p><button class="text-link service-select-trigger" type="button" data-service-choice="Som Automotivo">Selecionar serviço <span class="arrow">↗</span></button></div>
           </article>
           <article class="service-card">
-            <img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Equipamento de áudio automotivo instalado no painel" loading="lazy">
+            <img class="speaker-image" src="som%20pionner%20elitesom.webp" alt="Alto-falantes JBL automotivos" loading="lazy">
             <div class="service-card-copy"><h3>Alto-falantes</h3><p>Equipamentos de marcas reconhecidas no segmento automotivo.</p><div class="tags"><span class="tag">JBL</span><span class="tag">Hertz</span></div><button class="text-link service-select-trigger" type="button" data-service-choice="Som Automotivo">Selecionar serviço <span class="arrow">↗</span></button></div>
           </article>
         </div>
@@ -395,7 +396,6 @@
                 <label class="config-service-option"><input type="radio" name="main-service" value="Sistema Multimídia"><strong>Sistema Multimídia</strong></label>
                 <label class="config-service-option"><input type="radio" name="main-service" value="Alarme Automotivo"><strong>Alarme Automotivo</strong></label>
                 <label class="config-service-option"><input type="radio" name="main-service" value="PPF &amp; Envelopamento"><strong>PPF &amp; Envelopamento</strong></label>
-                <label class="config-service-option"><input type="radio" name="main-service" value="Envelopamento Automotivo"><strong>Envelopamento Automotivo</strong></label>
               </div>
               <h3>2. Escolha os complementos</h3>
               <div class="config-list" id="config-addons" aria-live="polite"><p class="config-empty">Selecione um serviço para ver os complementos disponíveis.</p></div>
@@ -452,11 +452,11 @@
 
     <section class="section audio" id="audio">
       <div class="wrap audio-layout">
-        <div class="audio-copy"><p class="eyebrow">Áudio automotivo</p><h2>Som automotivo</h2><p>Projetos e equipamentos para uma experiência sonora de qualidade. Trabalhamos com aparelhos, centrais e players automotivos de marcas reconhecidas.</p>
-          <div class="audio-brands"><div><strong>Pioneer</strong><p>Aparelhos e players para sistemas de áudio automotivo.</p></div><div><strong>JBL · JR8 · Hurricane</strong><p>Equipamentos e centrais para projetos de áudio automotivo.</p></div></div>
+        <div class="audio-copy"><p class="eyebrow">Áudio automotivo</p><h2>Som automotivo</h2><p>Projetos e equipamentos para uma experiência sonora de qualidade.</p>
+        <div class="audio-brands"><div><strong>PIONEER</strong></div><div><strong>JR8</strong></div><div><strong>JBL</strong></div></div>
           <a class="button" href="https://wa.me/5583993823536" target="_blank" rel="noreferrer">Fale com um especialista <span class="arrow">↗</span></a>
         </div>
-        <div class="audio-image"><img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Central e aparelho de som automotivo instalados no painel" loading="lazy"></div>
+        <div class="audio-image"><img src="som%20pionner%20elitesom.webp" alt="Alto-falantes JBL automotivos" loading="lazy"></div>
       </div>
     </section>
 
@@ -466,7 +466,7 @@
         <div class="gallery-grid">
           <button class="gallery-item" type="button" data-caption="Carro com iluminação LED"><img src="https://real-som.lovable.app/assets/hero-car-BiGt4u_w.jpg" alt="Carro com iluminação LED" loading="lazy"><span class="gallery-caption">Iluminação automotiva</span></button>
           <button class="gallery-item" type="button" data-caption="Central multimídia Android instalada"><img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Central multimídia Android instalada" loading="lazy"><span class="gallery-caption">Multimídia</span></button>
-          <button class="gallery-item" type="button" data-caption="Central de som automotivo instalada"><img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Central de som automotivo instalada no painel" loading="lazy"><span class="gallery-caption">Som automotivo</span></button>
+          <button class="gallery-item" type="button" data-caption="Alto-falantes JBL para som automotivo"><img src="som%20pionner%20elitesom.webp" alt="Alto-falantes JBL para som automotivo" loading="lazy"><span class="gallery-caption">Som automotivo</span></button>
           <button class="gallery-item" type="button" data-caption="Aplicação de revestimento fumê"><img src="https://real-som.lovable.app/assets/fume-CbzmRdCV.jpg" alt="Aplicação de revestimento fumê" loading="lazy"><span class="gallery-caption">Revestimento fumê</span></button>
           <button class="gallery-item" type="button" data-caption="Farol com LED automotivo"><img src="https://real-som.lovable.app/assets/led-OITnQJ64.jpg" alt="Farol com LED automotivo" loading="lazy"><span class="gallery-caption">Linha LED</span></button>
           <button class="gallery-item" type="button" data-caption="PPF &amp; Envelopamento automotivo"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Carro esportivo com acabamento de pintura premium" loading="lazy"><span class="gallery-caption">PPF &amp; Envelopamento</span></button>
@@ -488,7 +488,7 @@
           <a class="social-tile" href="https://www.instagram.com/realsomequipadora/" target="_blank" rel="noreferrer" aria-label="Real Som no Instagram: carro equipado"><img src="https://real-som.lovable.app/assets/hero-car-BiGt4u_w.jpg" alt="Carro equipado à noite" loading="lazy"></a>
           <a class="social-tile" href="https://www.instagram.com/realsomequipadora/" target="_blank" rel="noreferrer" aria-label="Real Som no Instagram: iluminação LED"><img src="https://real-som.lovable.app/assets/led-OITnQJ64.jpg" alt="Iluminação LED automotiva" loading="lazy"></a>
           <a class="social-tile" href="https://www.instagram.com/realsomequipadora/" target="_blank" rel="noreferrer" aria-label="Real Som no Instagram: multimídia"><img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Central multimídia" loading="lazy"></a>
-          <a class="social-tile" href="https://www.instagram.com/realsomequipadora/" target="_blank" rel="noreferrer" aria-label="Real Som no Instagram: som automotivo"><img src="https://real-som.lovable.app/assets/multimedia-DYa6rPrw.jpg" alt="Central de som automotivo instalada no painel" loading="lazy"></a>
+          <a class="social-tile" href="https://www.instagram.com/realsomequipadora/" target="_blank" rel="noreferrer" aria-label="Real Som no Instagram: som automotivo"><img src="som%20pionner%20elitesom.webp" alt="Alto-falantes JBL para som automotivo" loading="lazy"></a>
         </div>
       </div>
     </section>
@@ -556,12 +556,15 @@
     const whatsappNumber = "5583993823536";
     const serviceAddons = {
       "Revestimento Fumê": [
-        { value: "CARBONO PROFISSIONAL", detail: "3 ANOS DE GARANTIA", type: "radio" },
-        { value: "WINDOW BLUE", detail: "Taxa de retenção: 92% · Garantia vitalícia, válida em todo o Brasil", type: "radio" }
+        { value: "NANO CARBONO", detail: "Fator térmico: 65 · Garantia: 7 anos", type: "radio" },
+        { value: "CARBONO PROFISSIONAL", detail: "Fator térmico: 45 · Garantia: 3 anos", type: "radio" },
+        { value: "NANO CERÂMICA", detail: "Fator de eficiência térmica: 90% · Garantia vitalícia válida em todo o Brasil", type: "radio" },
+        { value: "Window Blue", detail: "Fator térmico: 92% · Garantia vitalícia válida em todo o Brasil", type: "radio" }
       ],
       "Som Automotivo": [
-        { value: "JBL", detail: "Alto-falantes JBL para projetos de áudio automotivo", type: "checkbox" },
-        { value: "Hertz", detail: "Equipamentos Hertz para qualidade sonora", type: "checkbox" }
+        { value: "PIONEER", detail: "", type: "checkbox" },
+        { value: "JR8", detail: "", type: "checkbox" },
+        { value: "JBL", detail: "", type: "checkbox" }
       ],
       "Iluminação LED": [
         { value: "15.000 Lumens", detail: "Linha LED", type: "radio" },
@@ -606,9 +609,12 @@
         input.addEventListener("change", updateConfiguration);
         const title = document.createElement("strong");
         title.textContent = option.value;
-        const detail = document.createElement("span");
-        detail.textContent = option.detail;
-        label.append(input, title, detail);
+        label.append(input, title);
+        if (option.detail) {
+          const detail = document.createElement("span");
+          detail.textContent = option.detail;
+          label.append(detail);
+        }
         addonList.append(label);
       });
     }
@@ -638,7 +644,12 @@
     document.querySelectorAll(".service-select-trigger").forEach((button) => button.addEventListener("click", () => {
       const service = button.dataset.serviceChoice;
       const serviceInput = mainServiceInputs.find((input) => input.value === service);
-      if (!serviceInput) return;
+      if (!serviceInput) {
+        const serviceField = document.querySelector("#service");
+        if (serviceField) serviceField.value = service;
+        document.querySelector("#contato").scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
       serviceInput.checked = true;
       renderAddons(service, button.dataset.addonChoice || "");
       updateConfiguration();
